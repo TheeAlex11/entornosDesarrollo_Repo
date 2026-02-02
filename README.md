@@ -12,10 +12,12 @@ En este repositorio se recopilan **prácticas y ejercicios** realizados a lo lar
 - 🔧 Introducción a los entornos de desarrollo  
 - 💻 Instalación y configuración del entorno de trabajo  
 - 🧩 Uso de **IDEs** (Eclipse, IntelliJ, VS Code, etc.)  
+- 🧪 Testing unitario con **JUnit**  
 - 🔄 Control de versiones con **Git y GitHub**  
 - 🐞 Depuración y pruebas de software  
 - 📦 Gestión de proyectos y dependencias  
 - 📝 Documentación del código  
+- 👁️‍🗨️ Buenas prácticas en testing  
 
 ---
 
