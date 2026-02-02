@@ -1,0 +1,50 @@
+⚠️ ES NECESARIO ESTAR EN EL DIRECTORIO "malosOlores" ⚠️
+
+---------------------- COMPILAR -------------------
+
+# Windows
+jdk-25\bin\javac -d compilados fuentes\calculadoraBasica.java
+
+# Ubuntu 24 - Java en PATH
+javac -d compilados fuentes/calculadoraBasica.java
+
+# Ubuntu 24 - Con JDK interno
+./jdk-25/bin/javac -d compilados fuentes/calculadoraBasica.java
+
+----------------------- EJECUTAR -------------------
+
+# Windows
+jdk-25\bin\java -cp compilados calculadoraBasica
+
+# Ubuntu 24 - Java en PATH
+java -cp compilados calculadoraBasica
+
+# Ubuntu 24 - Con JDK interno
+./jdk-25/bin/java -cp compilados calculadoraBasica
+
+------------------------ TESTS ---------------------
+
+---------------- Compilar Tests -------------------
+
+# Windows - Sin JDK interno
+jdk-25\bin\javac -cp compilados;test\lib\junit-jupiter-api-5.9.2.jar;test\lib\junit-jupiter-engine-5.9.2.jar;test\lib\junit-platform-console-standalone-1.9.2.jar;. test\calculadoraBasicaTest.java -d test\compilados test\calculadoraBasicaTest.java
+
+# Windows - Con JDK interno
+javac -cp compilados;test\lib\junit-jupiter-api-5.9.2.jar;test\lib\junit-jupiter-engine-5.9.2.jar;test\lib\junit-platform-console-standalone-1.9.2.jar;. test\FacturadorTest.java -d test\compilados test\FacturadorTest.java
+
+# Ubuntu 24 - Sin JDK interno
+javac -cp compilados:test/lib/junit-jupiter-api-5.9.2.jar:test/lib/junit-jupiter-engine-5.9.2.jar:test/lib/junit-platform-console-standalone-1.9.2.jar:. test/calculadoraBasicaTest.java -d test/compilados
+
+# Ubuntu 24 - Con JDK interno
+./jdk-25/bin/javac -cp compilados:test/lib/junit-jupiter-api-5.9.2.jar:test/lib/junit-jupiter-engine-5.9.2.jar:test/lib/junit-platform-console-standalone-1.9.2.jar:. test/calculadoraBasicaTest.java -d test/compilados
+
+---------------- Ejecutar Tests ---------------------
+
+# Windows
+jdk-25\bin\java -jar test\lib\junit-platform-console-standalone-1.9.2.jar -cp compilados;test\compilados --scan-class-path
+
+# Ubuntu 24 - Java en PATH
+java -jar test/lib/junit-platform-console-standalone-1.9.2.jar -cp compilados:test/compilados --scan-class-path
+
+# Ubuntu 24 - Con JDK interno
+./jdk-25/bin/java -jar test/lib/junit-platform-console-standalone-1.9.2.jar -cp compilados:test/compilados --scan-class-path

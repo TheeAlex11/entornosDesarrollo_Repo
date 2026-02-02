@@ -7,10 +7,6 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Tests de regresión para la clase Facturador
- * Verifica que la salida del programa contiene los valores esperados
- */
 public class FacturadorTest {
 
     private final ByteArrayOutputStream salidaCapturada = new ByteArrayOutputStream();
